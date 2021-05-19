@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Playball|Open Sans">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/aboutMePage.css">
+    <link rel="stylesheet" href="css/skillsPage.css">
+    <link rel="stylesheet" href="css/portfolioPage.css">
+    <link rel="stylesheet" href="css/contactPage.css">
+
+    <script src="src/scrollAcrossPage.js" defer></script>
+</head>
+<body>
+    <!--Start of Home Page***************************************************************************************-->
+    <div class="fullscreen home">
+        <div class="title">
+            Hi, Welcome <br>
+            I am RIZWAN
+        </div>
+        <div class="menu">
+                <button class="menuButton aboutMeButton" onclick="scrollToAboutMe()"><p>About Me</p></button>
+                <button class="menuButton skillsButton" onclick="scrollToSkills()"><p>Skills</p></button>
+                <button class="menuButton portfolioButton" onclick="scrollToPortfolio()"><p>Portfolio</p></button>
+                <button class="menuButton cvButton" onclick="downloadCV()"><p>CV</p></button>
+                <button class="menuButton contactButton" onclick="scrollToContact()"><p>Contact</p></button>
+        </div>
+        <div class="dropdownMenu">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="photoDiv">
+            <picture>
+                <source media="(max-width: 720px)" srcset="images/rizwan_W722_250-306.png" alt="photo">
+                <source media="(max-width: 1024px)" srcset="images/rizwan_W722_300-382.png" alt="photo">
+                <img src="images/rizwan_W1282_343-437.png" alt="photo">
+            </picture>
+        </div>
+    </div>
+    <!--End of Home Page************************************************************************************-->
+    <!--Start of About Me Page************************************************************************************-->
+    <div class="fullscreen aboutMePage">
+        <div class="aboutMePageTitle">
+            About Me
+        </div>
+        <div class="aboutMePageButtonDiv">
+            <button>Get to know me</button>
+        </div>
+        <div class="aboutMePageContent">
+            <p>Main content</p>
+        </div>
+    </div>
+    <!--End of About Me Page************************************************************************************-->
+    <!--Start of Skills Page************************************************************************************-->
+    <div class="fullscreen skillsPage">
+        <div class="skillPageTitle">
+            My Skills
+        </div>
+        <div class="skillPageMenu">
+            <button class="programmingSkillsButton">Programming</button>
+            <button class="softwareSkillsButton">Professional Softwares</button>
+            <button class="softSkillsButton">Soft Skills</button>
+            <button class="languageSkillsButton">Languages</button>
+        </div>
+        <div class="skillPageProgrammingSkills">
+            <!--Adding Circular Progress Bar Box for HTML-->
+            <div class="box">
+                <div class="percent percentHTML">
+                    <svg>
+                        <circle cx="75" cy="75" r="70"></circle>
+                        <circle cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>87<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">HTML</h2>
+            </div>
+            <!--Adding Circular Progress Bar Box for CSS-->
+            <div class="box">
+                <div class="percent percentCSS">
+                    <svg>
+                        <circle cx="75" cy="75" r="70"></circle>
+                        <circle cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>75<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">CSS</h2>
+            </div>
+            <!--Adding Circular Progress Bar Box for JavaScript-->
+            <div class="box">
+                <div class="percent percentJavaScript">
+                    <svg>
+                        <circle cx="75" cy="75" r="70"></circle>
+                        <circle cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>80<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">JavaScript</h2>
+            </div>
+            <!--Adding Circular Progress Bar Box for ReactJs-->
+            <div class="box">
+                <div class="percent percentReactJs">
+                    <svg>
+                        <circle cx="75" cy="75" r="70"></circle>
+                        <circle cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>20<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">React Js</h2>
+            </div>
+            <!--Adding Circular Progress Bar Box for TypeScript-->
+            <div class="box">
+                <div class="percent percentTypeScript">
+                    <svg>
+                        <circle cx="75" cy="75" r="70"></circle>
+                        <circle cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>20<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">TypeScript</h2>
+            </div>
+            <!--Adding Circular Progress Bar Box for NodeJs-->
+            <div class="box">
+                <div class="percent percentNodeJs">
+                    <svg>
+                        <circle cx="75" cy="75" r="70"></circle>
+                        <circle cx="75" cy="75" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>20<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">Node Js</h2>
+            </div>
+
+        </div>
+    </div>
+    <!--End of Skills Page************************************************************************************-->
+    <!--Start of Portfolio Page************************************************************************************-->
+    <div class="fullscreen portfolioPage">
+        <div class="portfolioPageTitle">
+            My Portfolio
+        </div>
+        <div class="portfolioPageMenu">
+            <div class="printMyTweetAppthumbnail"><img src="images/portfolioPage/PrintMyTweetImage_240-135.png" alt="PrintMyTweetApp"></div>
+        </div>
+        <div class="portfolioPagePrintMyTweetAppProject">
+            <div class="buttonsContainer">
+                <button>Demo</button>
+                <button>Code</button>
+            </div>
+            <div class="description">
+                <p>
+                    <h1>PrintMyTweet App</h1>
+                    <h2>Techinical Details</h2>
+                    <ul>
+                        <li>DOM Manipulation</li>
+                        <li>Canvas API</li>
+                        <li>Responsive Layout</li>
+                    </ul>
+                    <h2>App Features</h2>
+                    <ol>
+                        <li>Generate Image of any Size</li>
+                        <li>Writing Text in Image</li>
+                        <li>Change Colors of Text and background of Image</li>
+                        <li>Insert random Circles in the background</li>
+                        <li>Position your text in Image</li>
+                        <li>Insert Tweeter icon and Position anywhere inside Image</li>
+                        <li>Export Images as PNG or JPEG formats</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--End of Portfolio Page************************************************************************************-->
+    <div class="fullscreen contactPage">
+        <div class="contactPageTitle">
+            Contact Me
+        </div>
+        <div class="contactPageButtonDiv">
+            <button>LinkedIn</button>
+        </div>
+        <div class="contactPageForm">
+            <p>Main content</p>
+        </div>
+    </div>
+</body>
+</html>
